@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Postal</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Enviar Postal</h1>
+        <form id="postal-form" action="enviar_postal.php" method="post">
+            <div class="form-item">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-item">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-item">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <div class="button-container">
+                <button type="submit">Enviar Postal</button>
+            </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="message-box">
+            <p id="message">Su postal ha sido enviada con éxito.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

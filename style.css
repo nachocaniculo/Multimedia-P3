@@ -1,0 +1,130 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('resources/fondo.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .title {
+        display: flex; /* Usamos flexbox para alinear los elementos */
+        align-items: center; /* Centramos verticalmente los elementos */
+        margin-bottom: 20px; /* Espacio inferior entre el título y la descripción */
+    }
+
+    .title img {
+        width: 100px; /* Tamaño de la imagen */
+        margin-left: 20px; /* Espacio a la derecha de la imagen */
+    }
+
+    .title h1 {
+        color: white;
+        text-align: left;
+        padding-left: 15px;
+        text-shadow: 2px 2px 4px black; /* Agrega una sombra de color negro con desplazamiento horizontal de 2px y vertical de 2px */
+    }
+
+    .image-container {
+        display: flex; /* Utilizamos flexbox para colocar las imágenes en una fila */
+        justify-content: space-between; /* Espaciado uniforme entre las imágenes */
+        margin-top: 20px; /* Espacio entre el texto y las imágenes */
+    }
+
+    .image-container img {
+        max-width: 600px; /* Limitamos el ancho máximo para asegurar que no se desborde en pantallas pequeñas */
+        margin-right: 20px; /* Espacio entre las imágenes */
+    }
+
+    .content {
+        color: white;
+        margin-bottom: 20px; /* Espacio entre el texto y el contenedor de imágenes */
+    }
+
+    .content h1{
+        color: white;
+        text-align: left;
+        padding-left: 15px;
+        text-shadow: 2px 2px 4px black; /* Agrega una sombra de color negro con desplazamiento horizontal de 2px y vertical de 2px */
+    }
+
+    .description {
+        color: rgb(0, 0, 0); /* Color de letra negro */
+        text-align: center; /* Centrar el texto */
+        background-color: rgb(255, 255, 255); /* Fondo blanco */
+        padding: 10px;
+        font-weight: bold; /* Establecer el texto en negrita */
+    }
+
+    .description p {
+        margin: 10px 0; /* Espacio entre los párrafos */
+    }
+
+    .video-container {
+        margin: 20px auto; /* Centrar el contenedor del video */
+        text-align: center; /* Centrar el video dentro del contenedor */
+    }
+
+    .video-container iframe {
+        width: 100%; 
+        max-width: 800px; 
+        height: 460px;
+    }   
+
+    .zoom-in {
+        max-width: 600px; /* Limitamos el ancho máximo para asegurar que no se desborde en pantallas pequeñas */
+        margin-right: 20px; /* Espacio entre las imágenes */
+        opacity: 0; /* Empezamos con opacidad 0 para que las imágenes sean invisibles al principio */
+        animation: zoomAnimation 0.5s ease forwards; /* Aplicamos la animación de zoom */
+    }
+
+    @keyframes zoomAnimation {
+        from {
+            opacity: 0; /* Empezamos con opacidad 0 para que las imágenes sean invisibles al principio */
+            transform: scale(0.5); /* Escala inicial al 50% */
+        }
+        to {
+            opacity: 1; /* Opacidad al 100% */
+            transform: scale(1); /* Escala final al 100% */
+        }
+    }
+
+    .button-container {
+        margin-left: auto; /* Mueve el botón hacia la derecha al usar 'auto' en el margen izquierdo */
+    }
+
+    .button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+    
+    .container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    
+    .content {
+        color: black;
+        text-align: center;
+    }
+    
+    .form-item {
+        margin-bottom: 15px; /* Espacio entre elementos del formulario */
+    }
+    
+    .button-container {
+        text-align: center; /* Centra el botón */
+    }
