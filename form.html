@@ -7,24 +7,32 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="content">
-        <h1>Enviar Postal</h1>
-        <form id="postal-form" action="enviar_postal.php" method="post">
-            <div class="form-item">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div class="form-item">
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-            </div>
-            <div class="form-item">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-            </div>
-            <div class="button-container">
-                <button type="submit">Enviar Postal</button>
-            </div>
+    <div class="formBox">
+        <div class="content">
+            <header>
+                <a href="index.html" class="button">Volver atrás</a>
+                <h1>Enviar Postal</h1>
+            </header>
+            <main>
+                <form id="postal-form" action="enviar_postal.php" method="post">
+                    <div class="form-item">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="direccion">Dirección:</label>
+                        <input type="text" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-item">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class="button-container">
+                        <button type="submit">Enviar Postal</button>
+                    </div>
+                </form>
+            </main>
+        </div>
     </div>
     <div class="overlay" id="overlay">
         <div class="message-box">

@@ -13,10 +13,9 @@ body {
 }
 
 .content h1{
-    color: white;
+    color: black;
     text-align: center;
     padding-left: 15px;
-    text-shadow: 2px 2px 4px black; /* Agrega una sombra de color negro con desplazamiento horizontal de 2px y vertical de 2px */
 }
 
 .container {
@@ -26,9 +25,8 @@ body {
 }
 
 .content {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 2px 2px 4px black; /* Agrega una sombra de color negro con desplazamiento horizontal de 2px y vertical de 2px */   
+    color: rgb(0, 0, 0);
+    text-align: center; 
 }
 
 .form-item {
@@ -68,3 +66,22 @@ body {
 .form-item label {
     vertical-align: top; /* Alinea el label con la parte superior del textarea */
 }
+
+.formBox {
+    color: rgb(0, 0, 0); /* Color de letra negro */
+    text-align: center; /* Centrar el texto */
+    background-color: rgb(255, 255, 255); /* Fondo blanco */
+    padding: 10px;
+    font-weight: bold; /* Establecer el texto en negrita */
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self:flex-start;
+}
+
