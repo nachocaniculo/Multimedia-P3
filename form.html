@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="form.css">
 </head>
 <body>
-    <div class="formBox">
-        <div class="content">
-            <header>
+    <div class="content">
+        <main>
+            <div class="formBox">
                 <a href="index.html" class="button">Volver atrás</a>
                 <h1>Enviar Postal</h1>
-            </header>
-            <main>
                 <form id="postal-form" action="enviar_postal.php" method="post">
                     <div class="form-item">
                         <label for="nombre">Nombre:</label>
@@ -31,8 +29,18 @@
                         <button type="submit">Enviar Postal</button>
                     </div>
                 </form>
-            </main>
-        </div>
+            </div>
+        </main>
+        <footer>
+            <div class="bottom">
+                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance">
+                <img height="32" width="88"
+                    src="https://www.w3.org/WAI/WCAG22/wcag2.2AA"
+                    alt="Level AA conformance,
+                            W3C WAI Web Content Accessibility Guidelines 2.2">
+                </a>
+            </div>
+        </footer>
     </div>
     <div class="overlay" id="overlay">
         <div class="message-box">

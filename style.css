@@ -39,7 +39,7 @@
 
     .image-container img {
         max-width: 600px; /* Limitamos el ancho máximo para asegurar que no se desborde en pantallas pequeñas */
-        margin-right: 20px; /* Espacio entre las imágenes */
+        align-content: center;
     }
 
     .content {
@@ -73,13 +73,20 @@
 
     .video-container iframe {
         width: 100%; 
-        max-width: 800px; 
-        height: 460px;
+        max-width: 604px; 
+        height: 320px;
+        margin-left: 10px;
     }   
 
     .zoom-in {
         max-width: 600px; /* Limitamos el ancho máximo para asegurar que no se desborde en pantallas pequeñas */
         margin-right: 20px; /* Espacio entre las imágenes */
+        opacity: 0; /* Empezamos con opacidad 0 para que las imágenes sean invisibles al principio */
+        animation: zoomAnimation 0.5s ease forwards; /* Aplicamos la animación de zoom */
+    }
+
+    .zoom-in-images {
+        max-width: 600px; /* Limitamos el ancho máximo para asegurar que no se desborde en pantallas pequeñas */
         opacity: 0; /* Empezamos con opacidad 0 para que las imágenes sean invisibles al principio */
         animation: zoomAnimation 0.5s ease forwards; /* Aplicamos la animación de zoom */
     }
@@ -129,4 +136,16 @@
     
     .button-container {
         text-align: center; /* Centra el botón */
+    }
+
+    .imageBox{
+        background-color: white;
+        align-content: center;
+        margin-right: 10px;
+        padding: 9px;
+    }
+
+    .infoTitle{
+        font-weight: bold;
+        font-size: 24px;
     }
